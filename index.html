@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Utkarsh Saste | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: black;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        section {
+            padding: 60px 50px;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #38bdf8;
+        }
+
+        .about, .skills, .projects {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            margin-top: 30px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Utkarsh Saste</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Hello, I'm <span>Utkarsh Saste</span></h2>
+    <p>Full Stack Developer | AI Enthusiast | Database Designer</p>
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Contact Me
+    </button>
+</section>
+
+<section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        I am a passionate developer with strong knowledge in Web Development, 
+        Database Management Systems, and Artificial Intelligence. 
+        I enjoy building full-stack applications and designing efficient database systems.
+    </p>
+</section>
+
+<section id="skills" class="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">C / C++</div>
+        <div class="skill">AI & Machine Learning</div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-card">
+        <h3>AI-Powered Student Portfolio</h3>
+        <p>Developed a full-stack portfolio website with chatbot integration and dynamic resume builder.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Library Management System</h3>
+        <p>Created a database-driven system with triggers, stored procedures, and automation using MySQL.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Online Blogging Platform (BLOGG)</h3>
+        <p>Designed and developed a responsive blogging website with dark mode and interactive UI.</p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: utkarsh@example.com</p>
+    <p>LinkedIn: linkedin.com/in/utkarsh</p>
+    <p>GitHub: github.com/utkarsh</p>
+</section>
+
+<footer>
+    © 2026 Utkarsh Saste | All Rights Reserved
+</footer>
+
+</body>
+</html>
